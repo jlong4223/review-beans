@@ -5,6 +5,9 @@ const methodOverride = require('method-override')
 //require the routes
 const indexRouter = require('./routes/index')
 
+
+
+
 //create the express app
 const app = express()
 
@@ -24,6 +27,9 @@ app.use(express.urlencoded({extended: false}))
 
 // TODO mount routes
 app.use('/', indexRouter)
+
+
+
 
 //tell the app to listen 
 const port = 3001

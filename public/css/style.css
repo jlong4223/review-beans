@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+  margin: 0;
+  }
+
+
+/* landing page */
+/* TODO shade the image a bit */
+#firstPbody{
+    height: 100vh;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/f5843852864027.591f18d2ba0f8.jpg');
+    background-size: cover;
+  background-repeat: no-repeat;
+
+}
+body > main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#entrypage{
+    text-align: center;
+    color: white;
+}
+
+/* navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+    height: 30px;
+}
+nav a{
+    margin-right: 10px;
+}
+#hotmug{
+    margin-left: 10px;
+}
