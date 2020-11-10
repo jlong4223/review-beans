@@ -11,8 +11,8 @@ const app = express()
 //configure the server settings 
 app.set('view engine', 'ejs')
 
-// TODO require db config module
-
+//require db config module
+require('./config/database')
 
 
 //mount middleware
