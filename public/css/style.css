@@ -1,40 +1,43 @@
 * {
     box-sizing: border-box;
-  margin: 0;
-  }
+    margin: 0;
+}
 
 
 /* landing page */
-/* TODO shade the image a bit */
-#firstPbody{
+#firstPbody {
     height: 100vh;
-    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/f5843852864027.591f18d2ba0f8.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/f5843852864027.591f18d2ba0f8.jpg');
     background-size: cover;
-  background-repeat: no-repeat;
-
+    background-repeat: no-repeat;
 }
-body > main{
+
+body>main {
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#entrypage{
+
+#entrypage {
     text-align: center;
     color: white;
 }
 
 /* navigation */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: whitesmoke;
     height: 30px;
 }
-nav a{
+nav a {
     margin-right: 10px;
+    color: black;
 }
-#hotmug{
+#hotmug {
     margin-left: 10px;
 }
