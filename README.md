@@ -19,6 +19,8 @@ An application used to track types of coffee that you've had and where you've ha
 ## Screenshots
 ### Landing Page wireframe:
 ![wireframe](./public/images/beans-landing.png)
+### Landing Page in action
+![landing](./public/images/landing-first-design.png)
 ### ERD first draft
 ![ERD](./public/images/ERD-first-draft.png)
 <!-- insert more -->
