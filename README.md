@@ -30,3 +30,4 @@ An application used to track types of coffee that you've had and where you've ha
 
 ## Future Enhancements
 - allow user to upload pictures using AmazonS3 or Cloudinary
+- restrict access to users to certain features(edit, delete, etc) unless they created the resource
