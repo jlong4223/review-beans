@@ -6,7 +6,7 @@ const session = require('express-session')
 //require the routes
 const indexRouter = require('./routes/index')
 const authRouter = require('./routes/auth')
-
+const coffeeRouter = require('./routes/coffees')
 
 
 
@@ -35,6 +35,7 @@ app.use(session({
 // TODO mount routes
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
+app.use('/coffees', coffeeRouter)
 
 
 

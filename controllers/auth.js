@@ -37,7 +37,7 @@ function login(req, res){
             if (doesPasswordMatch){
                 req.session.userID = foundUser._id;
                 console.log(req.session)
-                res.redirect('/')
+                res.redirect('/coffees')
             } else {
                 res.redirect('/auth/login')
             }
