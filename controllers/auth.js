@@ -3,7 +3,9 @@ const bcrypt = require('bcrypt')
 
 module.exports = {
     new: newUser,
-    signup
+    signup, 
+    newLogin, 
+    login
 }
 
 function newUser(req, res){
@@ -16,5 +18,29 @@ function signup(req, res){
         console.log(newUser)
         res.redirect('/')
         // res.send(req.body)
+    })
+}
+
+function newLogin(req, res){
+    res.render('auth/login')
+}
+
+function login(req, res){
+    User.findOne({
+        username: req.body.username
+    }, function (error, foundUser){
+        // res.send(foundUser)
+        if (foundUser === null){
+            res.redirect('/auth/login')
+        } else {
+            const doesPasswordMatch = bcrypt.compareSync(req.body.password, foundUser.password); 
+            if (doesPasswordMatch){
+                req.session.userID = foundUser._id;
+                console.log(req.session)
+                res.redirect('/')
+            } else {
+                res.redirect('/auth/login')
+            }
+        }
     })
 }
