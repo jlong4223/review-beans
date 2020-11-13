@@ -1,6 +1,8 @@
 //require modules
 const express = require('express')
 
+const authorization = require('../utils/authorization')
+
 //create the router object
 const router = express.Router()
 
@@ -16,6 +18,7 @@ const coffeeCtrl = require('../controllers/coffees.js')
 // TODO define the route to display list of coffees
 router.get('/', coffeeCtrl.index)
 
+// TODO add.authorization to the route
 
 //export the router
 module.exports = router

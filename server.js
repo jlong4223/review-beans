@@ -3,6 +3,7 @@ const express = require('express')
 const morgan = require('morgan')
 const methodOverride = require('method-override')
 const session = require('express-session')
+const authorization = require('./utils/authorization')
 //require the routes
 const indexRouter = require('./routes/index')
 const authRouter = require('./routes/auth')
@@ -30,6 +31,9 @@ app.use(session({
     resave: false, 
     saveUninitialized: false
 }))
+
+//mount authorization
+app.use(authorization.addUserToRequest)
 
 
 // TODO mount routes

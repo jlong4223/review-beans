@@ -15,6 +15,7 @@ An application used to track types of coffee that you've had and where you've ha
 - Morgan
 - EJS
 - Font Awesome
+- bcrypt
 
 ## Screenshots
 ### Landing Page wireframe:
@@ -31,3 +32,11 @@ An application used to track types of coffee that you've had and where you've ha
 ## Future Enhancements
 - allow user to upload pictures using AmazonS3 or Cloudinary
 - restrict access to users to certain features(edit, delete, etc) unless they created the resource
+- add authorization
+
+<!-- ## Notes
+- add an about section on the site
+- add a footer with my linkedin and github 
+- add jQuery to the icon on login page to alert that the coffee is how when clicked
+- add imgURL input box assigned as a string for user to input url
+-->
