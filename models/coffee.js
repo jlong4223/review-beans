@@ -9,9 +9,16 @@ const Schema = mongoose.Schema
 
 // Initialize the coffee Schema
 const coffeeSchema = new Schema({
-    name: {
+    shop: {
         type: String
-    }, }, 
+    },
+    location: {
+        type: String
+    },  
+    coffeetype: {
+        type: String
+    }
+    }, 
         { timestamps: true
     })
 

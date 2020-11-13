@@ -11,7 +11,7 @@ const coffeeCtrl = require('../controllers/coffees.js')
 
 
     // TODO define the route for GET requests
-// router.get('/new', coffeeCtrl.new)
+router.get('/new', coffeeCtrl.new)
 
     // TODO define the route for creaing a coffee post
 

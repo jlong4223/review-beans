@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+
+<body>
+    <h1>Enter a new coffee shop</h1>
+
+    <form action="/coffees" method="POST">
+        <div class="container">
+            <div class="sidebar"></div>
+            <div class="coffee">
+                <form>
+                    <fieldset>
+                        <legend>New Coffee Shop Info</legend>
+                        <label> Shop:
+                            <input type="text" name="shop">
+                        </label>
+                        <label>Location:
+                            <input type="text" name="location">
+                        </label>
+                        <label>Coffee Tried:
+                            <input type="text" name="coffeetype">
+                        </label>
+                    </fieldset>
+                    <input type="submit" value="Add to the List">
+                </form>
+            </div>
+        </div>
+    </form>
+
+
+</body>
