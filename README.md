@@ -20,12 +20,16 @@ An application used to track types of coffee that you've had and where you've ha
 ## Screenshots
 ### Landing Page wireframe:
 ![wireframe](./public/images/beans-landing.png)
-### Landing Page in action
-![landing](./public/images/landing-first-design.png)
+### List Page wireframe:
+![list](./public/images/list-page.png)
+### Details Page wireframe:
+![details](./public/images/details.png)
 ### ERD first draft
 ![ERD](./public/images/ERD-first-draft.png)
-<!-- insert more -->
-
+### Landing Page in action
+![landing](./public/images/landing-first-design.png)
+### Login Page
+![Login](./public/images/login.png)
 ## Getting Started
 [Click Here](#) to see the deployed app!
 
@@ -33,6 +37,7 @@ An application used to track types of coffee that you've had and where you've ha
 - allow user to upload pictures using AmazonS3 or Cloudinary
 - restrict access to users to certain features(edit, delete, etc) unless they created the resource
 - add authorization
+- add username to reviews
 
 <!-- ## Notes
 - add an about section on the site
