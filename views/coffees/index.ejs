@@ -2,14 +2,27 @@
 
 <!-- add a container class included in bootstrap to the body? -->
 <!-- think about the header here -->
-<body>
+<body id="list">
     <a href="/coffees/new">Enter a new Shop to the list</a>
-    <main>
-    <h1>Your List Of Brew Reviews</h1>
-
-    </main>
-    
-    
+    <h1 id="listHeader">Your List Of Brew Reviews</h1>
+    <table>
+        <thead>
+            <th>Coffee Shop:</th>
+            <th>Location:</th>
+            <th>Coffee Tried:</th>
+        </thead>
+        <tbody>
+            <% coffees.forEach(coffee => { %>
+                <tr>
+                    <td><%=coffee.shop%></td>
+                    <td><%=coffee.location%></td>
+                    <td><%=coffee.coffeetype%></td>
+                    <td><a href="#">Details</a> </td>
+                </tr>
+                <% }) %>
+            </tbody>
+    </table>
+            
 </body>
 
 </html>

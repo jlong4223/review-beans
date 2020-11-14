@@ -48,3 +48,18 @@ nav a:hover{
     margin-left: 10px;
     color: white;
 }
+
+tbody, thead {
+    text-align: center;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+}
+
+#listHeader {
+    margin-left: 20px;
+    border-bottom: 3px solid black;
+    width: 90%;
+}

@@ -4,6 +4,7 @@ const morgan = require('morgan')
 const methodOverride = require('method-override')
 const session = require('express-session')
 const authorization = require('./utils/authorization')
+
 //require the routes
 const indexRouter = require('./routes/index')
 const authRouter = require('./routes/auth')
