@@ -26,7 +26,7 @@ body>main {
     color: white;
 }
 
-/* navigation */
+/* ==================navigation========================= */
 nav {
     display: flex;
     justify-content: space-between;
@@ -49,15 +49,14 @@ nav a:hover{
     color: white;
 }
 
+
 tbody, thead {
     text-align: center;
 }
-
 #list {
     display: flex;
     flex-direction: column;
 }
-
 #listHeader {
     display: flex;
     justify-content: space-between;
@@ -67,6 +66,85 @@ tbody, thead {
     width: 90%;
 }
 
-#plus{
-    width: 20px;
+/* =============New coffee form styles=================== */
+#newForm{
+    background-color: gray;
 }
+
+.container {
+    width: 80vw;
+    height: 50vw;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 10px;
+    /* box-shadow: 1px 1px 10px #ddd,
+              -1px -1px 10px #ddd,
+              1px -1px 10px #ddd,
+              -1px 1px 10px #ddd; */
+}
+.sidebar{
+    width: 40%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg/1200px-T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: orangered; */
+    border-radius: 10px 0 0 10px;
+    box-shadow: 1px 1px 10px #c46649;
+}
+.coffee{
+    width: 60%;
+    background: #e8e8e8;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+   /* border: 5px solid green; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* text-align: center; */
+   box-shadow: 1px 1px 10px #c46649;
+}
+legend{
+    padding: 0px 10px; 
+  font-weight: 500;
+  color: dodgerblue;
+  border-bottom: 2px solid #c46649;
+  text-align: left;
+}
+
+label{
+    font-weight: 200;
+  color: #c46649;
+  /* display: block; */
+}
+
+fieldset{
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px 10px;
+    width: 95%;
+  }
+
+  input, select{
+      width: 85%;
+      border: 1px solid dodgerblue;
+      border-radius: 5px;
+  }
+
+  select{
+      width: 100%;
+  }
+
+  input[type="submit"]{
+      color: dodgerblue;
+      font-size: 1.3em;
+      transition: 0.2s ease-in-out;
+  }
+
+  input[type="submit"]:hover {
+    cursor: pointer;
+    color: white;
+    background: #c46649;
+  }
