@@ -24,6 +24,7 @@ body>main {
 #entrypage {
     text-align: center;
     color: white;
+    font-size: 80px;
 }
 
 /* ==================navigation========================= */
@@ -38,6 +39,7 @@ nav {
 nav a {
     margin-right: 5px;
     color: white;
+    font-size: 25px;
 }
 nav a:hover{
     color: white;
