@@ -148,3 +148,21 @@ fieldset{
     color: white;
     background: #c46649;
   }
+
+
+
+
+  /* =============== delete form ====================== */
+.delete-form {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.delete-form button {
+    color: red;
+}
+
+.delete-form button:hover{
+    color: white;
+    background-color: red;
+}
