@@ -9,6 +9,7 @@ const authorization = require('./utils/authorization')
 const indexRouter = require('./routes/index')
 const authRouter = require('./routes/auth')
 const coffeeRouter = require('./routes/coffees')
+const detailsRouter = require('./routes/details')
 
 
 
@@ -41,6 +42,7 @@ app.use(authorization.addUserToRequest)
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
 app.use('/coffees', coffeeRouter)
+app.use('/', detailsRouter)
 
 
 

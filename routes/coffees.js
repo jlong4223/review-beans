@@ -1,23 +1,28 @@
 //require modules
 const express = require('express')
-// TODO finish authorization
-const authorization = require('../utils/authorization')
-
 //create the router object
 const router = express.Router()
-
 //require the coffees controller
 const coffeeCtrl = require('../controllers/coffees.js')
 
 
-// Below is the route that renders the page that has the form for new coffee
+// TODO finish authorization
+const authorization = require('../utils/authorization')
+
+
+// 1. Below is the route that renders the page that has the form for new coffee
+// 2. Below is the route that allows user to create a new coffee shop
+// 4. Below is the route that allows user to delete
+// 3.
+// 5. Below is the route that shows the list that the user makes (/coffees)
 router.get('/new', coffeeCtrl.new)
-
-// Below is the route that allows user to create a new coffee shop
 router.post('/', coffeeCtrl.create)
+router.get('/:id', coffeeCtrl.show)
+router.delete('/:id', coffeeCtrl.delete)
 
-// Below is the route that shows the list that the user makes (/coffees)
 router.get('/', coffeeCtrl.index)
+
+
 
 // TODO add.authorization to the route
 
