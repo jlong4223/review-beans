@@ -1,0 +1,63 @@
+<%- include('../partials/header') %>
+
+<body>
+    <h1> Details </h1>
+
+    <section>
+        <div> Coffee Shop: </div>
+        <div><%=coffee.shop%></div>
+        <div>Location: </div>
+        <div><%=coffee.location%></div>
+        <div>Coffee Tried:</div>
+        <div><%=coffee.coffeetype%></div>
+    </section>
+
+    <h2>Reviews</h2>
+    <form method="POST" action="/coffees/<%=coffee._id%>/details">
+        <label> Review:</label>
+        <textarea name="review"></textarea>
+        <label> Rating: </label>
+        <select name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <input type="submit" value="Add Review">
+    </form>
+
+    <% if (coffee.details.length) { %>
+        <table>
+          <thead>
+            <tr>
+              <!-- <th>Date</th> -->
+              <th>Review</th>
+              <th>Rating</th>
+              <!-- <th>Username</th> TODO figure out how to add username -->
+            </tr>
+          </thead>
+          <tbody>
+            <% let total = 0 %>
+            <% coffee.details.forEach(function(d) { %>
+              <% total+= d.rating %>
+              <tr>
+                <!-- TODO figure out local date thing here -->
+                <td><%= d.review %></td>
+                <td><%= d.rating %></td>
+                
+                
+              </tr>
+            <% }); %>
+            <tr>
+              <td colspan ="2"></td>
+              <td><strong><%= (total / coffee.details.length).toFixed(1) %></strong></td>
+            </tr>
+          </tbody>
+        </table>
+      <% } else { %>
+        <h5>No Reviews Yet</h5>
+      <% } %>
+
+
+</body>

@@ -2,30 +2,37 @@
 
 <!-- add a container class included in bootstrap to the body? -->
 <!-- think about the header here -->
+
 <body id="list">
-    <div id ="listHeader">
+    <div id="listHeader">
         <h1>Your List Of Brew Reviews</h1>
         <a href="/coffees/new"><i id="plus" class="fas fa-plus-square fa-2x"></i></a>
     </div>
-    
+
     <table>
         <thead>
+            <th>Delete/Edit:</th>
             <th>Coffee Shop:</th>
             <th>Location:</th>
             <th>Coffee Tried:</th>
         </thead>
         <tbody>
-            <% coffees.forEach(coffee => { %>
-                <tr>
-                    <td><%=coffee.shop%></td>
-                    <td><%=coffee.location%></td>
-                    <td><%=coffee.coffeetype%></td>
-                    <td><a href="#">Details</a> </td>
-                </tr>
-                <% }) %>
-            </tbody>
+            <% coffees.forEach((coffee) => { %>
+            <tr>
+                <td>
+                    <form action="/coffees/<%= coffee._id %>? _method=DELETE" class="delete-form" method="POST">
+                        <button type="submit">X</button>
+                    </form>
+                </td>
+                <td><%=coffee.shop%></td>
+                <td><%=coffee.location%></td>
+                <td><%=coffee.coffeetype%></td>
+                <td><a href="/coffees/<%= coffee._id %>">Details</a></td>
+            </tr>
+            <% }) %>
+        </tbody>
     </table>
-            
+
 </body>
 
 </html>
