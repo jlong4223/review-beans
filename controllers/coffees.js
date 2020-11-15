@@ -5,7 +5,9 @@ const Coffee = require('../models/coffee')
 module.exports = {
     index,
     new: newCoffee, 
-    create
+    create, 
+    delete: deleteCoffee, 
+    show
 }
 
 function index(req, res){
@@ -26,5 +28,18 @@ function create(req, res){
     coffee.save(function(err){
         console.log(coffee)
         res.redirect('/coffees')
+    })
+}
+
+function deleteCoffee(req, res){
+    Coffee.deleteOne(req.params.id)
+    res.redirect('/coffees')
+}
+
+function show(req, res){
+    Coffee.findById(req.params.id, function(err, coffee){
+        res.render('coffees/show', {
+            coffee
+        })
     })
 }
