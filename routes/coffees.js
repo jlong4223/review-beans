@@ -12,8 +12,8 @@ const authorization = require('../utils/authorization')
 
 // 1. Below is the route that renders the page that has the form for new coffee
 // 2. Below is the route that allows user to create a new coffee shop
+// 3. this is the route that shows the details page by its id
 // 4. Below is the route that allows user to delete
-// 3.
 // 5. Below is the route that shows the list that the user makes (/coffees)
 router.get('/new', coffeeCtrl.new)
 router.post('/', coffeeCtrl.create)
