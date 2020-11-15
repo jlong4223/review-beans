@@ -36,7 +36,7 @@ function login(req, res){
             const doesPasswordMatch = bcrypt.compareSync(req.body.password, foundUser.password); 
             if (doesPasswordMatch){
                 req.session.userID = foundUser._id;
-                console.log(req.session)
+                console.log(req.session) 
                 res.redirect('/coffees')
             } else {
                 res.redirect('/auth/login')

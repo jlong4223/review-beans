@@ -20,6 +20,9 @@ router.post('/', coffeeCtrl.create)
 router.get('/:id', coffeeCtrl.show)
 router.delete('/:id', coffeeCtrl.delete)
 
+// router.put('/:id/', coffeeCtrl.update)
+// router.get('/:id/edit', coffeeCtrl.edit)
+
 router.get('/', coffeeCtrl.index)
 
 

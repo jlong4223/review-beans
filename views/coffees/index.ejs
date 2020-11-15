@@ -11,13 +11,14 @@
 
     <table>
         <thead>
-            <th>Delete/Edit:</th>
+            <th>Delete:</th>
+            <th>Edit: </th>
             <th>Coffee Shop:</th>
             <th>Location:</th>
             <th>Coffee Tried:</th>
         </thead>
         <tbody>
-            <% coffees.forEach((coffee, idx) => { %>
+            <% coffees.forEach((coffee) => { %>
             <tr>
                 <!-- TODO figure out why the delete isnt working -->
                 <td>
@@ -25,6 +26,7 @@
                         <button type="submit">X</button>
                     </form>
                 </td>
+                <td><a href="/coffees/<%=coffee._id%>/edit">Edit</a></td>
                 <td><%=coffee.shop%></td>
                 <td><%=coffee.location%></td>
                 <td><%=coffee.coffeetype%></td>

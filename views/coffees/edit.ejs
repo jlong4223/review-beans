@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Update Coffee</title>
+</head>
+
+<body id="newForm">
+    <!-- <h1>Enter a new coffee shop</h1> -->
+
+    <form action="/coffees/<%=coffee._id%>/edit" method="POST">
+        <div class="container">
+            <div class="sidebar"></div>
+            <div class="coffee">
+                <form>
+                    <fieldset>
+                        <legend>Edit The Info:</legend>
+                        <label> <%=coffee.shop%>:
+                            <input type="text" name="shop">
+                        </label>
+                        <label><%=coffee.location%>:
+                            <input type="text" name="location">
+                        </label>
+                        <label><%=coffee.coffeetype%>:
+                            <input type="text" name="coffeetype">
+                        </label>
+                    </fieldset>
+                    <input type="submit" value="Add to the List">
+                </form>
+            </div>
+        </div>
+    </form>
+
+
+</body>

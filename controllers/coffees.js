@@ -7,7 +7,9 @@ module.exports = {
     new: newCoffee, 
     create, 
     delete: deleteCoffee, 
-    show
+    show, 
+    // update, 
+    // edit
 }
 
 function index(req, res){
@@ -31,6 +33,7 @@ function create(req, res){
     })
 }
 
+// TODO figure out why this isnt working
 function deleteCoffee(req, res){
     Coffee.deleteOne(req.params.id)
     res.redirect('/coffees')
@@ -43,3 +46,16 @@ function show(req, res){
         })
     })
 }
+
+// TODO figure out the edit thing too
+// function update(req, res) {
+//     Coffee.updateOne(req.params.id, req.body)
+//     res.redirect('/coffees')
+//   }
+
+// function edit(req, res) {
+//     console.log(req.params)
+//     res.render('coffees/edit', {
+//       coffee: Coffee.getOne(req.params.id),
+//     })
+//   }

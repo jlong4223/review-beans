@@ -11,13 +11,13 @@ const reviewSchema = new Schema({
     // username: [userSchema], 
     review: {
         type: String
-    }, 
+    },
     rating: {
         type: Number,
-        min: 1, 
-        max: 5, 
+        min: 1,
+        max: 5,
         default: 5
-    }, 
+    },
     again: {
         type: String
     }
@@ -30,15 +30,35 @@ const coffeeSchema = new Schema({
     },
     location: {
         type: String
-    },  
+    },
     coffeetype: {
         type: String
-    }, 
+    },
     details: [reviewSchema],
-    }, 
-        { timestamps: true
-    })
+}, {
+    timestamps: true
+})
 
 
 //export the schemas
+// module.exports= {
+//     getOne,
+//     updateOne
+// }
 module.exports = mongoose.model('Coffee', coffeeSchema)
+
+// function deleteOne(id){
+//     coffeeSchema.splice(id, 1)
+// }
+
+// function getAll(id) {
+//     return coffeeSchema;
+//    } 
+
+// function updateOne(id, coffeeSchema) {
+//     coffeeSchema[id] = coffee
+// }
+
+// function getOne(id) {
+//     return coffeeSchema[id]
+// }
