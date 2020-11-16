@@ -1,4 +1,5 @@
 //require the module
+const coffee = require('../models/coffee')
 const Coffee = require('../models/coffee')
 
 //set up exports
@@ -8,8 +9,8 @@ module.exports = {
     create, 
     delete: deleteCoffee, 
     show, 
-    // update, 
-    // edit
+    update, 
+    edit
 }
 
 function index(req, res){
@@ -33,10 +34,15 @@ function create(req, res){
     })
 }
 
-// TODO figure out why this isnt working
+
 function deleteCoffee(req, res){
-    Coffee.deleteOne(req.params.id)
-    res.redirect('/coffees')
+    Coffee.findById(req.params.id, function(err, coffee){
+        // const coffeeMainDoc = coffee.id(req.params.id)
+        coffee.remove()
+        coffee.save(function(err){
+            res.redirect('/coffees')
+        })
+    })
 }
 
 function show(req, res){
@@ -48,14 +54,16 @@ function show(req, res){
 }
 
 // TODO figure out the edit thing too
-// function update(req, res) {
-//     Coffee.updateOne(req.params.id, req.body)
-//     res.redirect('/coffees')
-//   }
+function update(req, res) {
+    Coffee.findById(req.params.id, function(err, coffee){
+        res.redirect('/coffees')
+    })
+  }
 
-// function edit(req, res) {
-//     console.log(req.params)
-//     res.render('coffees/edit', {
-//       coffee: Coffee.getOne(req.params.id),
-//     })
-//   }
+function edit(req, res) {
+    Coffee.findById(req.params.id, function(err, coffee){
+    res.render('coffees/edit', {
+        coffee
+    })
+  })
+}

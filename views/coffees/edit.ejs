@@ -12,7 +12,7 @@
 <body id="newForm">
     <!-- <h1>Enter a new coffee shop</h1> -->
 
-    <form action="/coffees/<%=coffee._id%>/edit" method="POST">
+    <form action="/coffees/<%=coffee._id%>/edit?_method=PUT" method="POST">
         <div class="container">
             <div class="sidebar"></div>
             <div class="coffee">
@@ -29,7 +29,7 @@
                             <input type="text" name="coffeetype">
                         </label>
                     </fieldset>
-                    <input type="submit" value="Add to the List">
+                    <input type="submit" value="Update">
                 </form>
             </div>
         </div>
