@@ -8,7 +8,7 @@ const db = mongoose.connection
 
 
 //connect to the database
-mongoose.connect('mongodb+srv://admin:mongodb@cluster0.k7d2g.mongodb.net/beans-review?retryWrites=true&w=majority', {
+mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useCreateIndex: true, 
     useUnifiedTopology: true 
