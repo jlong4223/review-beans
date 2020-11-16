@@ -153,10 +153,7 @@ fieldset{
     background: #c46649;
   }
 
-
-
-
-  /* =============== delete form ====================== */
+/* =============== delete form ====================== */
 .delete-form {
     display: inline-block;
     margin-right: 10px;
@@ -189,9 +186,7 @@ fieldset{
     /* justify-content: center; */
     width: 100%;
 }
-/* #enterreview{
-    /* width: 165px; */
-} */
+
 #reviewtext{
     max-height: 80px;
     width: 450px;
