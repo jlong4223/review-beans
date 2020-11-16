@@ -12,24 +12,24 @@
 <body id="newForm">
     <!-- <h1>Enter a new coffee shop</h1> -->
 
-    <form action="/coffees/<%=coffee._id%>/edit?_method=PUT" method="POST">
+    <form action="/coffees/<%=coffee._id%>?_method=PUT" method="POST">
         <div class="container">
             <div class="sidebar"></div>
             <div class="coffee">
                 <form>
                     <fieldset>
                         <legend>Edit The Info:</legend>
-                        <label> <%=coffee.shop%>:
+                        <label> <%=coffee.shop%>
                             <input type="text" name="shop">
                         </label>
-                        <label><%=coffee.location%>:
+                        <label><%=coffee.location%>
                             <input type="text" name="location">
                         </label>
-                        <label><%=coffee.coffeetype%>:
+                        <label><%=coffee.coffeetype%>
                             <input type="text" name="coffeetype">
                         </label>
                     </fieldset>
-                    <input type="submit" value="Update">
+                    <input name="text" type="submit" value="Update">
                 </form>
             </div>
         </div>

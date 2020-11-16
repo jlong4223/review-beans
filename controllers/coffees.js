@@ -37,14 +37,12 @@ function create(req, res){
 
 function deleteCoffee(req, res){
     Coffee.findById(req.params.id, function(err, coffee){
-        // const coffeeMainDoc = coffee.id(req.params.id)
         coffee.remove()
         coffee.save(function(err){
             res.redirect('/coffees')
         })
     })
 }
-
 function show(req, res){
     Coffee.findById(req.params.id, function(err, coffee){
         res.render('coffees/show', {
@@ -53,10 +51,15 @@ function show(req, res){
     })
 }
 
-// TODO figure out the edit thing too
 function update(req, res) {
     Coffee.findById(req.params.id, function(err, coffee){
-        res.redirect('/coffees')
+        // coffee.text = req.body.text
+        coffee.shop = req.body.shop
+        coffee.location = req.body.location
+        coffee.coffeetype = req.body.coffeetype
+        coffee.save(function(err){
+            res.redirect('/coffees')
+        })
     })
   }
 

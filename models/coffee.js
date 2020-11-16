@@ -40,25 +40,4 @@ const coffeeSchema = new Schema({
 })
 
 
-//export the schemas
-// module.exports= {
-//     getOne,
-//     updateOne
-// }
 module.exports = mongoose.model('Coffee', coffeeSchema)
-
-// function deleteOne(id){
-//     coffeeSchema.splice(id, 1)
-// }
-
-// function getAll(id) {
-//     return coffeeSchema;
-//    } 
-
-// function updateOne(id, coffeeSchema) {
-//     coffeeSchema[id] = coffee
-// }
-
-// function getOne(id) {
-//     return coffeeSchema[id]
-// }
