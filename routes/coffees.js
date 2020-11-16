@@ -14,15 +14,15 @@ const authorization = require('../utils/authorization')
 // 2. Below is the route that allows user to create a new coffee shop
 // 3. this is the route that shows the details page by its id
 // 4. Below is the route that allows user to delete
-// 5. Below is the route that shows the list that the user makes (/coffees)
+// 5. This is the route that allows user to update/change info
+// 6. This is the route that takes user to the edit form
+// 7. Below is the route that shows the list that the user makes (/coffees)
 router.get('/new', coffeeCtrl.new)
 router.post('/', coffeeCtrl.create)
 router.get('/:id', coffeeCtrl.show)
 router.delete('/:id', coffeeCtrl.delete)
-
 router.put('/:id/', coffeeCtrl.update)
 router.get('/:id/edit', coffeeCtrl.edit)
-
 router.get('/', coffeeCtrl.index)
 
 

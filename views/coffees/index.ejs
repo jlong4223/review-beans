@@ -20,7 +20,6 @@
         <tbody>
             <% coffees.forEach((coffee) => { %>
             <tr>
-                <!-- TODO figure out why the delete isnt working -->
                 <td>
                     <form action="/coffees/<%= coffee._id %>?_method=DELETE" class="delete-form" method="POST">
                         <button type="submit">X</button>

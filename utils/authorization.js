@@ -1,4 +1,4 @@
-// TODO require the user model
+// require the user model
 const User = require('../models/user')
 
 

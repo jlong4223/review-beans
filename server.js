@@ -39,7 +39,7 @@ app.use(session({
 app.use(authorization.addUserToRequest)
 
 
-// TODO mount routes
+// mount routes
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
 app.use('/coffees', coffeeRouter)

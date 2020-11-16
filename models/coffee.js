@@ -6,7 +6,7 @@ const username = require('./user')
 //set up shortcut variables
 const Schema = mongoose.Schema
 
-// TODO set up the sub schema 
+// TODO figure out how to connect username to review
 const reviewSchema = new Schema({
     // username: [userSchema], 
     review: {
