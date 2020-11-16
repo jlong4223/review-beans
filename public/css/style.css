@@ -177,9 +177,34 @@ fieldset{
     border-bottom: 1px solid black;
 }
 #detailsSec{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center; */
     height: 300px;
     /* border-bottom: 1px solid green; */
+}
+#reviewpage{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    width: 100%;
+}
+/* #enterreview{
+    /* width: 165px; */
+} */
+#reviewtext{
+    max-height: 80px;
+    width: 450px;
+}
+#topbox, #bottombox{
+    width: 900px;
+}
+
+#detailscard, #reviewcard{
+    width: 600px;
+    height: 350px;
+}
+
+#rating{
+    width: 60px;
 }
