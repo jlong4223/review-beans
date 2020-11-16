@@ -20,7 +20,9 @@ const reviewSchema = new Schema({
     },
     again: {
         type: String
-    }
+    },
+}, {
+    timestamps: true
 })
 
 // Initialize the coffee Schema

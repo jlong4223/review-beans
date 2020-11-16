@@ -173,22 +173,13 @@ fieldset{
 
 /* ==================== Review form ========================= */
 
-#showpage{
+.details{
+    border-bottom: 1px solid black;
+}
+#detailsSec{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    height: 90vh;
+    height: 300px;
+    /* border-bottom: 1px solid green; */
 }
-
-#reviewbtn {
-    width: 50%;
-}
-
-#rating {
-    width: 30%;
-}
-
-/* .details{
-    display: inline;
-} */
