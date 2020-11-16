@@ -59,6 +59,7 @@ tbody, thead {
 #list {
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
 }
 #listHeader {
     display: flex;
