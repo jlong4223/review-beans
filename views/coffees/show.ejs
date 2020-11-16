@@ -1,6 +1,7 @@
 <%- include('../partials/header') %>
 
-<body>
+<body id="showpage">
+    <div id="details">
     <h1> Details </h1>
 
     <section>
@@ -11,20 +12,21 @@
         <div>Coffee Tried:</div>
         <div><%=coffee.coffeetype%></div>
     </section>
+    </div>
 
     <h2>Reviews</h2>
     <form method="POST" action="/coffees/<%=coffee._id%>/details">
         <label> Review:</label>
         <textarea name="review"></textarea>
         <label> Rating: </label>
-        <select name="rating">
+        <select id="rating" name="rating">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-        <input type="submit" value="Add Review">
+        <input id="reviewbtn" type="submit" value="Add Review">
     </form>
 
     <% if (coffee.details.length) { %>
