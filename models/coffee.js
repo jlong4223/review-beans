@@ -1,14 +1,14 @@
 //require modules
 const mongoose = require('mongoose')
 // TODO figure out how to connect the username to the review
-const username = require('./user')
+const name = require('./user')
 
 //set up shortcut variables
 const Schema = mongoose.Schema
 
 // TODO figure out how to connect username to review
 const reviewSchema = new Schema({
-    // username: [userSchema], 
+    // name: [userSchema], 
     review: {
         type: String
     },
