@@ -31,7 +31,7 @@ An application used to track types of coffee that you've had and where you've ha
 ### Login Page
 ![Login](./public/images/login.png)
 ## Getting Started
-[Click Here](#) to see the deployed app!
+[Click Here](https://pour-review.herokuapp.com/) to see the deployed app!
 
 ## Future Enhancements
 - allow user to upload pictures using AmazonS3 or Cloudinary
