@@ -70,7 +70,7 @@ tbody, thead {
     width: 90%;
 }
 
-/* =============New coffee form styles=================== */
+/* ============New coffee form styles================= */
 #newForm{
     background-color: gray;
 }
@@ -95,6 +95,7 @@ tbody, thead {
     border-radius: 10px 0 0 10px;
     box-shadow: 1px 1px 10px #c46649;
 }
+
 .coffee{
     width: 60%;
     background: #e8e8e8;
@@ -112,7 +113,7 @@ tbody, thead {
 legend{
     padding: 0px 10px; 
   font-weight: 500;
-  color: dodgerblue;
+  color: #498dad;
   border-bottom: 2px solid #c46649;
   text-align: left;
   font-size: 40px;
@@ -131,28 +132,46 @@ fieldset{
     margin: 5px 10px;
     width: 95%;
   }
-
-  input, select{
+input, select{
       width: 80%;
-      border: 1px solid dodgerblue;
+      border: 1px solid #498dad;
       border-radius: 5px;
   }
-
-  select{
+select{
       width: 100%;
   }
-
-  input[type="submit"]{
-      color: dodgerblue;
+input[type="submit"]{
+      color: #498dad;
       font-size: 1.5em;
       transition: 0.2s ease-in-out;
   }
 
-  input[type="submit"]:hover {
+input[type="submit"]:hover {
     cursor: pointer;
     color: white;
     background: #c46649;
   }
+
+/* ================== EDIT form styles ================ */
+#editsidebar{
+    width: 40%;
+    background: url('https://i.imgur.com/4MM3oJf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: orangered; */
+    border-radius: 10px 0 0 10px;
+    box-shadow: 1px 1px 10px #c46649;
+}
+#editlegend{
+    color: #325020;
+}
+.editinp, .editupd{
+    border: 1px solid #325020; 
+}
+.editupd[type=submit]{
+    color: #325020;
+}
+
 
   /* =============== delete form ====================== */
 .delete-form {
@@ -195,6 +214,7 @@ fieldset{
 }
 #topbox, #bottombox{
     width: 900px;
+    border-bottom: 1px solid #c46649;
 }
 
 #detailscard, #reviewcard{
