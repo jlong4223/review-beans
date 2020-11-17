@@ -49,7 +49,7 @@ app.use('/', detailsRouter)
 
 
 //tell the app to listen 
-const port = 3001
+const port = process.env.PORT || 3001
 app.listen(port,function(){
     console.log(`Express is now listening on port: ${port}`)
 })
