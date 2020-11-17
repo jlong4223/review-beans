@@ -6,7 +6,8 @@ module.exports = {
     signup, 
     newLogin, 
     login, 
-    authenticate
+    authenticate, 
+    signOut
 }
 
 function newUser(req, res){
@@ -65,5 +66,13 @@ function authenticate(req, res) {
                 res.redirect('/login');
             }
         }
+    })
+}
+
+function signOut(req, res){
+    req.session.destroy(function(err){
+        delete req.user;
+        // console.log(req.user)
+        res.redirect('/')
     })
 }
