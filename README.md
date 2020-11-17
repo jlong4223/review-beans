@@ -38,6 +38,7 @@ An application used to track types of coffee that you've had and where you've ha
 - restrict access to users to certain features(edit, delete, etc) unless they created the resource
 - add authorization
 - add username to reviews
+- edit & delete reviews
 
 <!-- ## Notes
 - add an about section on the site
