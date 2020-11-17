@@ -225,3 +225,9 @@ input[type="submit"]:hover {
 #rating{
     width: 60px;
 }
+
+.social_icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    }
