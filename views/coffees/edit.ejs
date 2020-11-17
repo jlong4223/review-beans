@@ -14,22 +14,22 @@
 
     <form action="/coffees/<%=coffee._id%>?_method=PUT" method="POST">
         <div class="container">
-            <div class="sidebar"></div>
+            <div class="sidebar" id="editsidebar"></div>
             <div class="coffee">
                 <form>
                     <fieldset>
-                        <legend>Edit The Info:</legend>
+                        <legend id="editlegend">Edit The Info:</legend>
                         <label> Coffee Shop: 
-                            <input type="text" name="shop" placeholder="<%=coffee.shop%>">
+                            <input class="editinp" type="text" name="shop" placeholder="<%=coffee.shop%>">
                         </label>
                         <label>Location: 
-                            <input type="text" name="location" placeholder="<%=coffee.location%>">
+                            <input class="editinp" type="text" name="location" placeholder="<%=coffee.location%>">
                         </label>
                         <label>Coffee tried:
-                            <input type="text" name="coffeetype" placeholder="<%=coffee.coffeetype%>">
+                            <input class="editinp"  type="text" name="coffeetype" placeholder="<%=coffee.coffeetype%>">
                         </label>
                     </fieldset>
-                    <input name="text" type="submit" value="Update">
+                    <input class="editupd" name="text" type="submit" value="Update">
                 </form>
             </div>
         </div>
