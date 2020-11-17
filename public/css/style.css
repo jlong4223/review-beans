@@ -191,7 +191,7 @@ input[type="submit"]:hover {
 /* ==================== Review form ========================= */
 
 .details{
-    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 #detailsSec{
     /* display: flex;
