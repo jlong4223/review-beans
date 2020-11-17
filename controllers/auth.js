@@ -5,7 +5,8 @@ module.exports = {
     new: newUser,
     signup, 
     newLogin, 
-    login
+    login, 
+    authenticate
 }
 
 function newUser(req, res){
@@ -17,8 +18,7 @@ function signup(req, res){
     User.create(req.body, function(error, newUser){
         console.log(newUser)
         res.redirect('/')
-        // res.send(req.body)
-    })
+    });
 }
 
 function newLogin(req, res){
@@ -40,6 +40,29 @@ function login(req, res){
                 res.redirect('/coffees')
             } else {
                 res.redirect('/auth/login')
+            }
+        }
+    })
+}
+
+function authenticate(req, res) {
+    User.findOne({
+        username: req.body.username
+    }, function (error, foundUser) {
+        if (foundUser === null) {
+            req.session.error = 'Account not found. ';
+            res.redirect('/login');   
+        }
+        else {
+            const passwordMatch = bcrypt.compareSync(req.body.password, foundUser.password);
+            if (passwordMatch) {
+                delete req.session.error;
+                req.session.userId = foundUser._id;
+                res.redirect('/');
+            }
+            else {
+                req.session.error = 'Incorrect username or password. ';
+                res.redirect('/login');
             }
         }
     })

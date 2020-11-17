@@ -1,5 +1,5 @@
 //require the module
-const coffee = require('../models/coffee')
+// const coffee = require('../models/coffee')
 const Coffee = require('../models/coffee')
 
 //set up exports
@@ -14,7 +14,7 @@ module.exports = {
 }
 
 function index(req, res){
-    // console.log(req.user)
+    console.log('req.user inside of /coffees:', req.user)
     Coffee.find({}, function(err, coffees){
         res.render('coffees/index', {
             coffees
