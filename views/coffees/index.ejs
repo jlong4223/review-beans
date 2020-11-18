@@ -1,21 +1,43 @@
-<%- include('../partials/header') %>
+<!-- <%- include('../partials/header') %> -->
 
-<!-- add a container class included in bootstrap to the body? -->
 <!-- think about the header here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel='stylesheet' href='/css/table.css' />
+    <title>Review the beans</title>
+</head>
+<nav>
+    <!-- <a href="/coffees">| See reviews |</a> -->
+    <!-- <a href='/auth/new'>| Signup |</a> -->
+    <a href='/auth/login'>| Log-in |</a>
+    <a href='/'><i id="hotmug" class="fas fa-mug-hot fa-lg"></i></a>
+    <a href='/auth/signout'>| Logout |</a>
+</nav>
 
 <body id="list">
-    <div id="listHeader">
+    <!-- <div id="listHeader">
         <h1>List Of Brew Reviews</h1>
         <a href="/coffees/new"><i id="plus" class="fas fa-plus-square fa-2x"></i></a>
-    </div>
+    </div> -->
 
     <table>
         <thead>
-            <th>Delete:</th>
-            <th>Edit: </th>
+            <th></th>
+            <th></th>
             <th>Coffee Shop:</th>
             <th>Location:</th>
             <th>Coffee Tasted:</th>
+            <th><a href="/coffees/new"><i id="plus" class="fas fa-plus-square fa-2x"></i></a></th>
         </thead>
         <tbody>
             <% coffees.forEach((coffee) => { %>
