@@ -40,6 +40,7 @@ An application used to track types of coffee that you've had and where you've ha
 - add authorization
 - add username to reviews
 - edit & delete reviews
+- adjust styles to fit different screen sizes
 
 <!-- ## Notes
 - add an about section on the site
