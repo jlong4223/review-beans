@@ -94,3 +94,17 @@ td:hover td:before {
         color: white;
         background-color: red;
     }
+
+    #plus{
+        color: white;
+    }
+    #plus:hover{
+        color:dodgerblue;
+    }
+
+    #editbtn{
+        color: white
+    }
+    #editbtn:hover{
+        color: dodgerblue;
+    }
