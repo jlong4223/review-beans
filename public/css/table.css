@@ -40,7 +40,12 @@ td {
 }
 
 th {
-	text-align: left;
+    text-align: left;
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
 }
 
 thead > th {
@@ -95,16 +100,9 @@ td:hover td:before {
         background-color: red;
     }
 
-    #plus{
+    #plus, #editbtn, #infobtn {
         color: white;
     }
-    #plus:hover{
+    #plus:hover, #editbtn:hover, #infobtn:hover{
         color:dodgerblue;
-    }
-
-    #editbtn{
-        color: white
-    }
-    #editbtn:hover{
-        color: dodgerblue;
     }
