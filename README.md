@@ -9,13 +9,14 @@ An application used to track types of coffee that you've had and where you've ha
 - Javascript
 - Node.js
 - Bootstrap
-- Mongoose.JS
+- Mongoose.js
 - MongoDB
-- Express.JS
+- Express.js
 - Morgan
 - EJS
 - Font Awesome
 - bcrypt
+- heroku
 
 ## Screenshots
 ### Landing Page wireframe:
