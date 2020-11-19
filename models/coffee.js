@@ -40,6 +40,7 @@ const coffeeSchema = new Schema({
     coffeetype: {
         type: String
     },
+    // image: String,
     details: [reviewSchema],
 }, {
     timestamps: true

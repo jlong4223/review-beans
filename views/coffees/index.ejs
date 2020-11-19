@@ -38,6 +38,7 @@
             <th>Coffee Shop:</th>
             <th>Location:</th>
             <th>Coffee Tasted:</th>
+            <!-- <th>Pic:</th> -->
             <th><a href="/coffees/new"><i id="plus" class="fas fa-plus-square fa-2x"></i></a></th>
         </thead>
         <tbody>
@@ -52,6 +53,7 @@
                 <td><%=coffee.shop%></td>
                 <td><%=coffee.location%></td>
                 <td><%=coffee.coffeetype%></td>
+                <!-- <td><img src="<%=coffee.image%>"></td> -->
                 <td><a href="/coffees/<%= coffee._id %>"><i id="infobtn" class="fas fa-info-circle fa-lg"></i></a></td>
             </tr>
             <% }) %>
