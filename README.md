@@ -25,12 +25,14 @@ An application used to track types of coffee that you've had and where you've ha
 ![list](./public/images/list-page.png)
 ### Details Page wireframe:
 ![details](./public/images/details.png)
-### ERD first draft
+### ERD draft:
 ![ERD](./public/images/ERD-first-draft.png)
-### Landing Page in action
+### Landing Page in action:
 ![landing](./public/images/landing-first-design.png)
-### Login Page
+### Login Page:
 ![Login](./public/images/login.png)
+### List page in action:
+![details](./public/images/list-page-action.png)
 ## Getting Started
 [Click Here](https://pour-review.herokuapp.com/) to see the deployed app!
 
