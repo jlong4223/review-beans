@@ -52,6 +52,12 @@ nav a:hover{
     color: white;
 }
 
+#footer{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
 /*================== Coffees Index page styling ======================*/
 tbody, thead {
     text-align: center;
