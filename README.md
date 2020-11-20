@@ -39,7 +39,7 @@ An application used to track types of coffee that you've had and where you've ha
 ## Future Enhancements
 - allow user to upload pictures using AmazonS3 or Cloudinary
 - restrict access to users to certain features(edit, delete, etc) unless they created the resource
-- add authorization
+- plug in the jquery Datatable to allow user to sort the coffees list
 - add username to reviews
 - edit & delete reviews
 - adjust styles to fit different screen sizes
@@ -49,4 +49,5 @@ An application used to track types of coffee that you've had and where you've ha
 - add a footer with my linkedin and github 
 - add jQuery to the icon on login page to alert that the coffee is how when clicked
 - add imgURL input box assigned as a string for user to input url
+- https://datatables.net/
 -->
