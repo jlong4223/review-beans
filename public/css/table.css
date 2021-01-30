@@ -129,6 +129,9 @@ nav a:hover {
     width: 300px;
     margin-left: 250px;
     border: 1px solid black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://www.pngkey.com/png/detail/254-2541831_falling-coffee-beans.png");
+    background-size: cover;
   }
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
