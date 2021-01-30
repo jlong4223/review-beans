@@ -1,123 +1,121 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
-
 
 /* landing page */
 #firstPbody {
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)),
-        url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/f5843852864027.591f18d2ba0f8.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/f5843852864027.591f18d2ba0f8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-body>main {
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body > main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #entrypage {
-    text-align: center;
-    color: white;
-    font-size: 80px;
+  text-align: center;
+  color: white;
+  font-size: 80px;
 }
 
 /* ==================navigation========================= */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.6)),;
-    height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  height: 30px;
 }
 nav a {
-    margin-right: 5px;
-    color: white;
-    font-size: 25px;
-    margin-top: 15px;
+  margin-right: 5px;
+  color: white;
+  font-size: 25px;
+  margin-top: 15px;
 }
-nav a:hover{
-    color: white;
-    text-shadow: 2px 2px 8px white;
-    /* text-decoration: none; */
+nav a:hover {
+  color: white;
+  text-shadow: 2px 2px 8px white;
+  /* text-decoration: none; */
 }
 #hotmug {
-    margin-left: 10px;
-    color: white;
+  margin-left: 10px;
+  color: white;
 }
 
-#footer{
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 10px;
+#footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10px;
 }
 
 /*================== Coffees Index page styling ======================*/
-tbody, thead {
-    text-align: center;
+tbody,
+thead {
+  text-align: center;
 }
 #list {
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
 }
 #listHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px;
-    border-bottom: 3px solid black;
-    width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  border-bottom: 3px solid black;
+  width: 90%;
 }
 
 /* ============New coffee form styles================= */
-#newForm{
-    background-color: gray;
+#newForm {
+  background-color: gray;
 }
 
 .container {
-    width: 80vw;
-    height: 50vw;
-    display: flex;
-    margin: 50px auto;
-    border-radius: 10px;
-    /* box-shadow: 1px 1px 10px #ddd,
+  width: 80vw;
+  height: 50vw;
+  display: flex;
+  margin: 50px auto;
+  border-radius: 10px;
+  /* box-shadow: 1px 1px 10px #ddd,
               -1px -1px 10px #ddd,
               1px -1px 10px #ddd,
               -1px 1px 10px #ddd; */
 }
-.sidebar{
-    width: 40%;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg/1200px-T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: orangered; */
-    border-radius: 10px 0 0 10px;
-    box-shadow: 1px 1px 10px #c46649;
+.sidebar {
+  width: 40%;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg/1200px-T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: orangered; */
+  border-radius: 10px 0 0 10px;
+  box-shadow: 1px 1px 10px #c46649;
 }
 
-.coffee{
-    width: 60%;
-    background: #e8e8e8;
-    border-radius: 0 10px 10px 0;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow: auto;
-   /* border: 5px solid green; */
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   /* text-align: center; */
-   box-shadow: 1px 1px 10px #c46649;
+.coffee {
+  width: 60%;
+  background: #e8e8e8;
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  /* border: 5px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  box-shadow: 1px 1px 10px #c46649;
 }
-legend{
-    padding: 0px 10px; 
+legend {
+  padding: 0px 10px;
   font-weight: 500;
   color: #498dad;
   border-bottom: 2px solid #c46649;
@@ -125,122 +123,133 @@ legend{
   font-size: 40px;
 }
 
-label{
-    font-weight: 200;
+label {
+  font-weight: 200;
   color: #c46649;
   font-size: 25px;
 }
 
-fieldset{
-    border: 1px solid #ccc; 
-    border-radius: 5px;
-    padding: 2px;
-    margin: 5px 10px;
-    width: 95%;
-  }
-input, select{
-      width: 80%;
-      border: 1px solid #498dad;
-      border-radius: 5px;
-  }
-select{
-      width: 100%;
-  }
-input[type="submit"]{
-      color: #498dad;
-      font-size: 1.5em;
-      transition: 0.2s ease-in-out;
-  }
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 5px 10px;
+  width: 95%;
+}
+input,
+select {
+  width: 80%;
+  border: 1px solid #498dad;
+  border-radius: 5px;
+}
+select {
+  width: 100%;
+}
+input[type="submit"] {
+  color: #498dad;
+  font-size: 1.5em;
+  transition: 0.2s ease-in-out;
+}
 
 input[type="submit"]:hover {
-    cursor: pointer;
-    color: white;
-    background: #c46649;
-  }
+  cursor: pointer;
+  color: white;
+  background: #c46649;
+}
 
 /* ================== EDIT form styles ================ */
-#editsidebar{
-    width: 40%;
-    background: url('https://i.imgur.com/4MM3oJf.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: orangered; */
-    border-radius: 10px 0 0 10px;
-    box-shadow: 1px 1px 10px #c46649;
+#editsidebar {
+  width: 40%;
+  background: url("https://i.imgur.com/4MM3oJf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: orangered; */
+  border-radius: 10px 0 0 10px;
+  box-shadow: 1px 1px 10px #c46649;
 }
-#editlegend{
-    color: #325020;
+#editlegend {
+  color: #325020;
 }
-.editinp, .editupd{
-    border: 1px solid #325020; 
+.editinp,
+.editupd {
+  border: 1px solid #325020;
 }
-.editupd[type=submit]{
-    color: #325020;
+.editupd[type="submit"] {
+  color: #325020;
 }
 
-
-  /* =============== delete form ====================== */
+/* =============== delete form ====================== */
 .delete-form {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .delete-form button {
-    color: red;
+  color: red;
 }
 
-.delete-form button:hover{
-    color: white;
-    background-color: red;
+.delete-form button:hover {
+  color: white;
+  background-color: red;
 }
 
 /* ==================== Review form ========================= */
 
-.details{
-    border-top: 1px solid black;
+.details {
+  border-top: 1px solid black;
 }
-#detailsSec{
-    /* display: flex;
+#detailsSec {
+  /* display: flex;
     flex-wrap: wrap;
     align-items: center; */
-    height: 300px;
-    /* border-bottom: 1px solid green; */
+  height: 300px;
+  /* border-bottom: 1px solid green; */
 }
-#reviewpage{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    width: 100%;
-    background-color: whitesmoke;
-    /* background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-vintage-coffee-milk-tea-poster-background-image_151308.jpg'); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)), url('https://i.pinimg.com/originals/ff/38/1c/ff381c6098271e4b440632b75cb0cef8.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#reviewtext{
-    max-height: 90px;
-    width: 470px;
-}
-#topbox, #bottombox{
-    width: 900px;
-    border-bottom: 1px solid #c46649;
+#reviewpage {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  width: 100%;
+  background-color: whitesmoke;
+  /* background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-vintage-coffee-milk-tea-poster-background-image_151308.jpg'); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://i.pinimg.com/originals/ff/38/1c/ff381c6098271e4b440632b75cb0cef8.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#detailscard, #reviewcard{
-    width: 600px;
-    height: 350px;
+#reviewtext {
+  max-height: 90px;
+  width: 470px;
+}
+#topbox,
+#bottombox {
+  width: 900px;
+  border-bottom: 1px solid #c46649;
 }
 
-#rating{
-    width: 60px;
+#detailscard,
+#reviewcard {
+  width: 600px;
+  height: 350px;
 }
 
-.social_icon{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    color:  #498dad;
-    }
+#rating {
+  width: 60px;
+}
+
+.social_icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #498dad;
+}
+
+@media screen and (max-width: 800px) {
+  #detailscard,
+  #reviewcard {
+    width: 300px;
+    height: 420px;
+  }
+}
