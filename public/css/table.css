@@ -1,108 +1,137 @@
 html,
 body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 body {
-	margin: 0;
-    background: gray;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.6)), url('https://ak.picdn.net/shutterstock/videos/1007080339/thumb/1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-	font-family: sans-serif;
-	font-weight: 100;
+  margin: 0;
+  background: gray;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("https://ak.picdn.net/shutterstock/videos/1007080339/thumb/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  font-weight: 100;
 }
 
 .container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 table {
-	width: 800px;
-	border-collapse: collapse;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 th,
 td {
-	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
-	color: #fff;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 
 th {
-    text-align: left;
-    font-size: 20px;
+  text-align: left;
+  font-size: 20px;
 }
 
 td {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 thead > th {
-		background-color: #55608f;
+  background-color: #55608f;
 }
 
-tr:hover, td:hover{
-			background-color: rgba(255,255,255,0.3);
+tr:hover,
+td:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 td {
-    position: relative;
+  position: relative;
 }
 td:hover td:before {
- 
-				content: "";
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: -9999px;
-				bottom: -9999px;
-				background-color: rgba(255,255,255,0.2);
-				z-index: -1;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)),;
-        height: 10px;
-    }
-    nav a {
-        margin-right: 5px;
-        color: white;
-        font-size: 25px;
-        margin-top: 15px;
-    }
-    nav a:hover{
-        color: white;
-        text-shadow: 2px 2px 8px white;
-        /* text-decoration: none; */
-    }
-    #hotmug {
-        margin-left: 10px;
-        color: white;
-    }
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
 
-    .delete-form button:hover{
-        color: white;
-        background-color: red;
-    }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  height: 10px;
+}
+nav a {
+  margin-right: 5px;
+  color: white;
+  font-size: 25px;
+  margin-top: 15px;
+}
+nav a:hover {
+  color: white;
+  text-shadow: 2px 2px 8px white;
+  /* text-decoration: none; */
+}
+#hotmug {
+  margin-left: 10px;
+  color: white;
+}
 
-    #plus, #editbtn, #infobtn {
-        color: white;
-    }
-    #plus:hover, #editbtn:hover, #infobtn:hover{
-        color:dodgerblue;
-    }
+.delete-form button:hover {
+  color: white;
+  background-color: red;
+}
+
+#plus,
+#editbtn,
+#infobtn {
+  color: white;
+}
+#plus:hover,
+#editbtn:hover,
+#infobtn:hover {
+  color: dodgerblue;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    margin-top: 15px;
+  }
+  table {
+    margin-top: 30px;
+  }
+  th {
+    font-size: 12px;
+  }
+  td {
+    display: block;
+  }
+  tr {
+    display: block;
+    width: 300px;
+    margin-left: 250px;
+    border: 1px solid black;
+  }
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://www.pngkey.com/png/detail/254-2541831_falling-coffee-beans.png");
+    background-size: cover;
+  }
+}
