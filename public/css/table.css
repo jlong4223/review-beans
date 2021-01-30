@@ -75,7 +75,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+  background: transparent;
   height: 10px;
 }
 nav a {
